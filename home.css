@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #111;
+
+}
+h1{
+    color:#fff;
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+}
+.poster{
+    
+    object-fit: contain;
+    max-height: 150px;
+    transition: transform 420ms;
+
+}
+.poster:hover{
+    transform: scale(1.09);
+
+}
+.posters{
+    display: flex;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-left: 10px;
+}
+.posters::-webkit-scrollbar{
+    display: none;
+}
+.banner{
+    background-image:url(money-heist.jpg);
+    background-position:center center; 
+    background-size: cover;
+    height: 450px;
+}
+h3{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+
+}
+.banner-fade{
+    margin-top: 140px;
+    height: 14rem;
+    background-image: linear-gradient(180deg,transparent,rgba(18, 11, 11, 0.8),#111);
+}
+.banner-title{
+    padding-top: 10rem;
+    padding-left: 3rem;
+}
+.title{
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+.banner-descr{
+    color: #fff;
+    font-size: 1rem;
+    max-width: 360px;
+    padding-top: 2px;
+    padding-left: 5rem;
+}
+button{
+    margin-left: 0.7rem;
+    background-color: #111;
+    color: #fff;
+    border-radius: 3px;
+    border: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+    transition: transform 420ms
+}
+button:hover{
+    background-color: #fff;
+    color: #111;
+    opacity: 0.9;
+    transform: 10rem;
+}
+.nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+    margin-top: 1rem;
+}
+.logo{
+    width: 150px;
+    object-fit: contain;
+}
+.profile{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 3rem;
+    border: 3px solid#fff;
+    margin-right: 2rem;
+}
+ul{
+    color: #fff;
+    font-size:2rem;
+    display: flex;
+    list-style-type: none;
+    margin-right: 45rem;
+    margin-top: 1.5rem;
+}
+li{
+   margin-left: 2rem;
+   transition: 1s;
+}
+li:hover{
+    color: darkred;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    }

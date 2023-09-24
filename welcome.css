@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(17, 7, 7);
+    color: #fff;
+}
+.logo{
+    width: 200px;
+    cursor: pointer;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+/*nav*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+nav button{
+    border: 0;
+    outline: 0;
+    background-color: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+.header{
+    width: 75rem;
+    height: 100vh;
+    background-image: radial-gradient(93.75% 105.88% at 0.39% 99.26%,rgba(150, 1, 7, 0.4)1.42%,rgba(30,1,66,0.51)53.8%rgba(13,14,32,0)100%),linear-gradient(98.24deg,#1d0005 14.75%,rgba(0,8,29,0.48)),url(banner1\ -\ Copy.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 9%;
+    border-radius: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    position: relative;
+    margin-right: 2rem;
+    font-size: 36px;
+}
+
+/*------------------------FAQ------------------*/
+.faq{
+    padding: 30px 5%;
+    font-size: 10px;
+
+
+}
+.faq h2{
+    font-weight: 500;
+    font-size: 40px;
+    margin-left: 2.2rem;
+    margin-bottom: 2rem;
+}
+.accordation{
+    margin-left: 2.2rem;
+    width: 100%;
+    max-width: 100rem;
+}
+.accordation li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+
+    
+}
+.accordation li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    background-color: #132144;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type=radio]{
+    display: none;
+}
+.faq .accordation .content{
+    background-color: #132144;
+    text-align: center;
+    padding: 0 20px;
+    overflow: hidden;
+    transition: max-height 0.5s padding 0.5s;
+}
+.accordation input[type=radio]:checked +label +.content{
+    max-height: 600px;
+    padding: 30px 20px;
+
+
+}
+.accordation input[type=radio]:checked +label::before{
+    max-height: 0px;
+    padding: 30px 20px;
+}
+.accordation input[type=radio]:checked +label::after{
+            transform:rotate(135deg);
+}
+    
+
+.footer{
+    padding: 50px 15% 10px;
+}
+.footer h1{
+    font-size: 10px;
+    font-weight: 400;
+    margin-bottom: 28px;
+    color: #777;
+}
+.footer .col{
+    flex-basis: 25%;
+    font-weight: 400;
+    flex-grow: 1;
+    margin-top: 10px;
+}
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+.footer .col a{
+    color: #777;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+button{
+    background-color: rgb(1, 1, 1);
+    margin-left: 14rem;
+    color: azure;
+    border-color: #fff;
+    padding: 5px;
+    font-size: 10px;
+    border-radius: 3px;
+    
+}
+
+.features{
+    padding: 50px 12%;
+    font-size: 20px;
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 50px 0%;
+}
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+
+}
+.features h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+}
+.img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
